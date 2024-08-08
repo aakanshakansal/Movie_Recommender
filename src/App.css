@@ -1,0 +1,47 @@
+body {
+  background: #141414;
+  color: white;
+
+}
+
+.movie-app > .row {
+  overflow-x: auto;
+  flex-wrap: nowrap;
+}
+
+.movie-card {
+  flex: 0 0 auto;
+  margin-right: 10px;
+  width: 200px; /* Adjust width as needed */
+}
+
+.movie-card .image-container {
+  position: relative;
+  transition: transform 0.2s;
+}
+
+.movie-card .image-container:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.movie-card .image-container:hover .overlay {
+  opacity: 1;
+}
+
+.movie-card .image-container img {
+  width: 100%;
+  height: auto;
+}
+
+.movie-card .overlay {
+  position: absolute;
+  background: rgba(0, 0, 0, 0.8);
+  width: 100%;
+  transition: 0.5s ease;
+  opacity: 0;
+  bottom: 0;
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+}
